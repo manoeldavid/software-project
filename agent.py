@@ -45,7 +45,7 @@ class ExampleAgent(BaseAgent):
         # Ponto de destino
         target_point = self.targets[0]
         distance_to_target = self.distance_to(target_point)  # Chamada do método corrigida
-        velocidade = 0.7 if distance_to_target > 1.0 else 0.3
+        velocidade = 0.5 if distance_to_target > 1.0 else 0.3
 
         # Obtendo obstáculos ao redor
         obstacles = self.get_obstacles()
